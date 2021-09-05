@@ -1,4 +1,4 @@
-package io.github.manuzhang
+package io.github.manuzhnag
 
 import java.time.format.DateTimeFormatter
 import java.time.{ZonedDateTime, ZoneId}
