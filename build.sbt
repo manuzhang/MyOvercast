@@ -3,18 +3,19 @@ import scalajsbundler.sbtplugin.ScalaJSBundlerPlugin.autoImport.webpack
 ThisBuild / scalaVersion := "2.13.6"
 
 lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
-  .crossType(CrossType.Pure)
   .settings(
     name := "MyOvercast",
-    version := "0.1.0-SNAPSHOT"
+    version := "0.1.0-SNAPSHOT",
+    libraryDependencies ++= Seq(
+      "com.lihaoyi" %%% "upickle" % "1.4.0"
+    )
   )
 
 lazy val backend = project.in(file("jvm"))
   .settings(
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %% "upickle" % "1.4.0",
-      "com.lihaoyi" %% "requests" % "0.6.9",
       "com.lihaoyi" %% "os-lib" % "0.7.8",
+      "com.lihaoyi" %% "requests" % "0.6.9",
       "org.scala-lang.modules" %% "scala-xml" % "2.0.1")
   ).dependsOn(myovercast.jvm)
 
@@ -37,19 +38,18 @@ lazy val frontend = project.in(file("js"))
       "copy-webpack-plugin" -> "6.4.0",
       "webpack-merge" -> "5.8.0"),
     stIgnore += "react-proxy",
+    stFlavour := Flavour.Slinky,
     libraryDependencies ++= Seq(
       "me.shadaj" %%% "slinky-web" % "0.6.7",
       "me.shadaj" %%% "slinky-hot" % "0.6.7"),
     webpack / version := "4.44.2",
     startWebpackDevServer / version := "3.11.2",
-
     fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot"),
-    fastOptJS / webpackBundlingMode := BundlingMode.LibraryOnly(),
-
+    webpackConfigFile := Some((ThisBuild / baseDirectory).value / "custom.webpack.config.js"),
+    scalaJSUseMainModuleInitializer := true,
     Test / requireJsDomEnv := true,
 
     addCommandAlias("dev", ";fastOptJS::startWebpackDevServer;~fastOptJS"),
-
     addCommandAlias("build", "fullOptJS::webpack") 
   ).enablePlugins(ScalaJSBundlerPlugin, ScalablyTypedConverterPlugin)
   .dependsOn(myovercast.js)

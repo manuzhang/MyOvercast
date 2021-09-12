@@ -1,31 +1,24 @@
 package io.github.manuzhang
 
-import scala.scalajs.js.annotation.JSExportTopLevel
-import scala.scalajs.LinkingInfo
+import scala.scalajs.{js, LinkingInfo}
 import slinky.web.ReactDOM
 import slinky.hot
 import org.scalajs.dom
 
-// @JSImport("resources/index.css", JSImport.Default)
-// @js.native
-// object IndexCSS extends js.Object
+import scala.scalajs.js.annotation.JSImport
+
+@JSImport("./index.css", JSImport.Default)
+@js.native
+object IndexCSS extends js.Object
 
 object Main {
-  // val css = IndexCSS
+  val css = IndexCSS
 
-  @JSExportTopLevel("main")
-  def main(): Unit = {
+  def main(args: Array[String]): Unit = {
     if (LinkingInfo.developmentMode) {
       hot.initialize()
     }
 
-    val container = Option(dom.document.getElementById("root")).getOrElse {
-      val elem = dom.document.createElement("div")
-      elem.id = "root"
-      dom.document.body.appendChild(elem)
-      elem
-    }
-
-    ReactDOM.render(App.component(()), container)
+    ReactDOM.render(App.component(()), dom.document.getElementById("container"))
   }
 }
