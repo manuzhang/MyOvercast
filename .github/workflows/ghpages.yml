@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: olafurpg/setup-scala@v10
+      - uses: coursier/cache-action@v5
       - name: Fetch Overcast data 
         run: sbt "backend/run MyOvercast"
         env:
