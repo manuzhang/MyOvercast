@@ -14,7 +14,7 @@ jobs:
           EMAIL: owenzhang1990@gmail.com
           PASSWORD: ${{ secrets.OVERCAST_PASSWORD }}
       - name: Build site    
-        run: sbt "frontend/dev"
+        run: sbt dev
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
