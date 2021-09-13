@@ -1,0 +1,23 @@
+name: Build and Deploy GhPages
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: olafurpg/setup-scala@v10
+      - uses: coursier/cache-action@v5
+      - name: Fetch Overcast data 
+        run: sbt "backend/run MyOvercast"
+        env:
+          EMAIL: owenzhang1990@gmail.com
+          PASSWORD: ${{ secrets.OVERCAST_PASSWORD }}
+      - name: Build site    
+        run: sbt build 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: js/target/scala-2.13/scalajs-bundler/main
