@@ -2,7 +2,6 @@ package io.github.manuzhang
 
 import io.github.manuzhang.MyOvercast.PodcastEpisode
 
-import java.time.{ZonedDateTime, ZoneId}
 import scala.collection.mutable.ArrayBuffer
 import scala.xml.XML
 import upickle.default._
@@ -17,6 +16,10 @@ object MyOvercast extends App {
     starred: Boolean, listenDate: String)
   implicit val episodeRw: ReadWriter[PodcastEpisode] = macroRW[PodcastEpisode]
 
+  case class TopPodcasts(podcasts: List[(String, Int)])
+  implicit val topRw: ReadWriter[TopPodcasts] = macroRW[TopPodcasts]
+
+
   val url = "https://overcast.fm"
   val email = System.getenv("EMAIL")
   val password = System.getenv("PASSWORD")
@@ -27,8 +30,6 @@ object MyOvercast extends App {
   val resp = requests.get(s"$url/account/export_opml/extended",
     headers = Map("Cookie" -> r.cookies.values.head.toString)
   ).text
-
-  val (start, end) = getStartEndTime(7)
 
   val episodes = ArrayBuffer.empty[PodcastEpisode]
   var subscribed = 0
@@ -58,27 +59,18 @@ object MyOvercast extends App {
             val episode = node \@ "title"
             val episodeUrl = node \@ "overcastUrl"
             val listenDate = node \@ "userUpdatedDate"
-            // val pattern = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX")
-            // val listenTime = ZonedDateTime.from(pattern.parse(listenStr))
-            // if (listenTime.isAfter(start) && listenTime.isBefore(end)) {
             episodes.append(PodcastEpisode(podcast, podcastUrl, episode, episodeUrl, starred, listenDate))
-            // }
           }
         }
       }
 
-    // val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
-    os.write.over(os.pwd / "js" / "src" / "main" / "resources" / "myovercast.json",
-      write(MyOvercast(playedNum, inProgressNum, starredNum, episodes.toList), indent = 2))
-  }
-
-  def getStartEndTime(days: Int): (ZonedDateTime, ZonedDateTime) = {
-    val now = ZonedDateTime.now(ZoneId.of("Asia/Shanghai"))
-
-    def startOfDay(dt: ZonedDateTime): ZonedDateTime = {
-      dt.withHour(0).withMinute(0).withSecond(0)
-    }
-
-    (startOfDay(now.minusDays(days)), startOfDay(now))
+      val top10  = episodes.groupBy(_.podcast).map { case (podcast, episodes) =>
+        podcast -> episodes.size
+      }.toList.sortWith { (a, b) => a._2 > b._2 }.take(10)
+      val path = os.pwd / "js" / "src" / "main" / "resources"
+      os.write.over(path / "myovercast.json",
+        write(MyOvercast(playedNum, inProgressNum, starredNum, episodes.toList), indent = 2))
+      os.write.over(path / "myovercast-top10.json",
+        write(TopPodcasts(top10), indent = 2))
   }
 }

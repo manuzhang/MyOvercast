@@ -1,5 +1,8 @@
 import sbt.Keys.version
 import scalajsbundler.sbtplugin.ScalaJSBundlerPlugin.autoImport.webpack
+
+import java.nio.file.Files
+
 ThisBuild / scalaVersion := "2.13.6"
 
 lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
@@ -19,6 +22,7 @@ lazy val backend = project.in(file("jvm"))
       "org.scala-lang.modules" %% "scala-xml" % "2.0.1")
   ).dependsOn(myovercast.jvm)
 
+lazy val build = TaskKey[Unit]("build")
 lazy val frontend = project.in(file("js"))
   .settings(
     scalacOptions += "-Ymacro-annotations",
@@ -41,17 +45,35 @@ lazy val frontend = project.in(file("js"))
     stFlavour := Flavour.Slinky,
     libraryDependencies ++= Seq(
       "me.shadaj" %%% "slinky-web" % "0.6.7",
-      "me.shadaj" %%% "slinky-hot" % "0.6.7"),
+      "me.shadaj" %%% "slinky-hot" % "0.6.7",
+      "io.github.cquiroz" %%% "scala-java-time" % "2.2.2"
+    ),
     webpack / version := "4.44.2",
     startWebpackDevServer / version := "3.11.2",
     fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot"),
     webpackConfigFile := Some((ThisBuild / baseDirectory).value / "custom.webpack.config.js"),
     scalaJSUseMainModuleInitializer := true,
     Test / requireJsDomEnv := true,
+ 
+    build := {
+      val artifacts = (Compile / fullOptJS / webpack).value
+      val artifactFolder = (Compile / fullOptJS / crossTarget).value
 
+      val indexFrom = baseDirectory.value / "src/main/js/index.html"
+      val indexTo = artifactFolder / "index.html"
+
+      val indexPatchedContent = {
+        import collection.JavaConverters._
+        Files
+          .readAllLines(indexFrom.toPath, IO.utf8)
+          .asScala
+          .map(_.replaceAllLiterally("-fastopt-", "-opt-"))
+          .mkString("\n")
+      }
+
+      Files.write(indexTo.toPath, indexPatchedContent.getBytes(IO.utf8))
+      artifacts
+    },
     addCommandAlias("dev", ";fastOptJS::startWebpackDevServer;~fastOptJS"),
-    addCommandAlias("build", "fullOptJS::webpack") 
-  ).enablePlugins(ScalaJSBundlerPlugin, ScalablyTypedConverterPlugin)
+  ).enablePlugins(ScalaJSBundlerPlugin, ScalablyTypedConverterPlugin, TzdbPlugin)
   .dependsOn(myovercast.js)
-
-
