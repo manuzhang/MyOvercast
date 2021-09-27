@@ -44,10 +44,6 @@ object MyOvercast extends App {
         val podcastUrl = outline \@ "htmlUrl"
         outline.nonEmptyChildren.foreach { node =>
           if (node \@ "type" == "podcast-episode") {
-            val played = node \@ "played" == "1"
-            if (played) {
-              playedNum += 1
-            }
             val inProgress = (node \@ "progress").nonEmpty
             if (inProgress) {
               inProgressNum += 1
@@ -56,10 +52,14 @@ object MyOvercast extends App {
             if (starred) {
               starredNum += 1
             }
-            val episode = node \@ "title"
-            val episodeUrl = node \@ "overcastUrl"
-            val listenDate = node \@ "userUpdatedDate"
-            episodes.append(PodcastEpisode(podcast, podcastUrl, episode, episodeUrl, starred, listenDate))
+            val played = node \@ "played" == "1"
+            if (played) {
+              val episode = node \@ "title"
+              val episodeUrl = node \@ "overcastUrl"
+              val listenDate = node \@ "userUpdatedDate"
+              episodes.append(PodcastEpisode(podcast, podcastUrl, episode, episodeUrl, starred, listenDate))
+              playedNum += 1
+            }
           }
         }
       }
