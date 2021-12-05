@@ -52,6 +52,7 @@ lazy val frontend = project.in(file("js"))
     startWebpackDevServer / version := "3.11.2",
     fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot"),
     webpackConfigFile := Some((ThisBuild / baseDirectory).value / "custom.webpack.config.js"),
+    useYarn := true,
     scalaJSUseMainModuleInitializer := true,
     Test / requireJsDomEnv := true,
  
