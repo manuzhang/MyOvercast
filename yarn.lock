@@ -82,9 +82,9 @@
     fastq "^1.6.0"
 
 "@npmcli/fs@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/fs/-/fs-1.0.0.tgz#589612cfad3a6ea0feafcb901d29c63fd52db09f"
-  integrity sha512-8ltnOpRR/oJbOp8vaGUnipOi3bqkcW+sLHFlyXIr08OGHmVJLB1Hn7QtGXbYcpVtH1gAYZTlmDXtE4YV0+AMMQ==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/fs/-/fs-1.1.0.tgz#bec1d1b89c170d40e1b73ad6c943b0b75e7d2951"
+  integrity sha512-VhP1qZLXcrXRIaPoqb4YA55JQxLNF3jNR4T55IdOJa3+IFJKNYHtPvtXx8slmeMavj37vCzCfrqQM1vWLsYKLA==
   dependencies:
     "@gar/promisify" "^1.0.1"
     semver "^7.3.5"
@@ -2721,11 +2721,11 @@ is-symbol@^1.0.2, is-symbol@^1.0.3:
     has-symbols "^1.0.2"
 
 is-weakref@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-weakref/-/is-weakref-1.0.1.tgz#842dba4ec17fa9ac9850df2d6efbc1737274f2a2"
-  integrity sha512-b2jKc2pQZjaeFYWEf7ScFj+Be1I+PXmlu572Q8coTXZ+LD/QQZ7ShPMst8h16riVgyXTQwUsFEl74mDvc/3MHQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/is-weakref/-/is-weakref-1.0.2.tgz#9529f383a9338205e89765e0392efc2f100f06f2"
+  integrity sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ==
   dependencies:
-    call-bind "^1.0.0"
+    call-bind "^1.0.2"
 
 is-windows@^1.0.1, is-windows@^1.0.2:
   version "1.0.2"
@@ -4176,9 +4176,9 @@ rc-tabs@~11.7.0:
     rc-util "^5.5.0"
 
 rc-textarea@^0.3.0, rc-textarea@~0.3.0:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/rc-textarea/-/rc-textarea-0.3.5.tgz#07ed445dddb94e5ae6764676923a49bddad9b2ec"
-  integrity sha512-qa+k5vDn9ct65qr+SgD2KwJ9Xz6P84lG2z+TDht/RBr71WnM/K61PqHUAcUyU6YqTJD26IXgjPuuhZR7HMw7eA==
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/rc-textarea/-/rc-textarea-0.3.6.tgz#b255a9dd78648033bac8daa281ad95249122420a"
+  integrity sha512-6esiDE4AG3lqnmCdgAp/nutrZAqZEfRT3K749H8vMzNtxy9JScuMJ9MMtWN2DDQh+LCDvX4dgflaRjDCqtDHWw==
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "^2.2.1"
