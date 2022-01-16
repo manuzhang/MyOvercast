@@ -10,7 +10,7 @@ lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
     name := "MyOvercast",
     version := "0.1.0-SNAPSHOT",
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %%% "upickle" % "1.4.0"
+      "com.lihaoyi" %%% "upickle" % "1.4.4"
     )
   )
 
