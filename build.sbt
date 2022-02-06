@@ -10,7 +10,7 @@ lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
     name := "MyOvercast",
     version := "0.1.0-SNAPSHOT",
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %%% "upickle" % "1.4.0"
+      "com.lihaoyi" %%% "upickle" % "1.4.4"
     )
   )
 
@@ -18,7 +18,7 @@ lazy val backend = project.in(file("jvm"))
   .settings(
     libraryDependencies ++= Seq(
       "com.lihaoyi" %% "os-lib" % "0.8.1",
-      "com.lihaoyi" %% "requests" % "0.6.9",
+      "com.lihaoyi" %% "requests" % "0.7.0",
       "org.scala-lang.modules" %% "scala-xml" % "2.0.1")
   ).dependsOn(myovercast.jvm)
 
@@ -44,9 +44,9 @@ lazy val frontend = project.in(file("js"))
     stIgnore += "react-proxy",
     stFlavour := Flavour.Slinky,
     libraryDependencies ++= Seq(
-      "me.shadaj" %%% "slinky-web" % "0.6.7",
-      "me.shadaj" %%% "slinky-hot" % "0.6.7",
-      "io.github.cquiroz" %%% "scala-java-time" % "2.2.2"
+      "me.shadaj" %%% "slinky-web" % "0.6.8",
+      "me.shadaj" %%% "slinky-hot" % "0.6.8",
+      "io.github.cquiroz" %%% "scala-java-time" % "2.3.0"
     ),
     webpack / version := "4.44.2",
     startWebpackDevServer / version := "3.11.2",
