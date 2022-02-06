@@ -17,7 +17,7 @@ lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
 lazy val backend = project.in(file("jvm"))
   .settings(
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %% "os-lib" % "0.8.0",
+      "com.lihaoyi" %% "os-lib" % "0.8.1",
       "com.lihaoyi" %% "requests" % "0.6.9",
       "org.scala-lang.modules" %% "scala-xml" % "2.0.1")
   ).dependsOn(myovercast.jvm)
