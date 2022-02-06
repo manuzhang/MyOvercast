@@ -3,7 +3,7 @@ import scalajsbundler.sbtplugin.ScalaJSBundlerPlugin.autoImport.webpack
 
 import java.nio.file.Files
 
-ThisBuild / scalaVersion := "2.13.6"
+ThisBuild / scalaVersion := "2.13.7"
 
 lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
   .settings(
@@ -17,7 +17,7 @@ lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
 lazy val backend = project.in(file("jvm"))
   .settings(
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %% "os-lib" % "0.7.8",
+      "com.lihaoyi" %% "os-lib" % "0.8.0",
       "com.lihaoyi" %% "requests" % "0.6.9",
       "org.scala-lang.modules" %% "scala-xml" % "2.0.1")
   ).dependsOn(myovercast.jvm)
@@ -46,12 +46,13 @@ lazy val frontend = project.in(file("js"))
     libraryDependencies ++= Seq(
       "me.shadaj" %%% "slinky-web" % "0.6.8",
       "me.shadaj" %%% "slinky-hot" % "0.6.8",
-      "io.github.cquiroz" %%% "scala-java-time" % "2.2.2"
+      "io.github.cquiroz" %%% "scala-java-time" % "2.3.0"
     ),
     webpack / version := "4.44.2",
     startWebpackDevServer / version := "3.11.2",
     fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot"),
     webpackConfigFile := Some((ThisBuild / baseDirectory).value / "custom.webpack.config.js"),
+    useYarn := true,
     scalaJSUseMainModuleInitializer := true,
     Test / requireJsDomEnv := true,
  
