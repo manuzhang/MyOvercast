@@ -24,13 +24,12 @@ object MyOvercast extends App {
   val email = System.getenv("EMAIL")
   val password = System.getenv("PASSWORD")
 
-  val r = requests.post(s"$url/login",
+  val cookie = requests.post(s"$url/login",
     data = Map("email" -> email, "password" -> password), 
-    check = false)
+    check = false).cookies("o").toString
   val resp = requests.get(s"$url/account/export_opml/extended",
-    headers = Map("Cookie" -> r.cookies.values.head.toString)
+    headers = Map("Cookie" -> cookie)
   ).text
-
   val episodes = ArrayBuffer.empty[PodcastEpisode]
   var subscribed = 0
   var playedNum = 0
