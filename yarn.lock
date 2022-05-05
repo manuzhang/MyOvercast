@@ -4045,9 +4045,9 @@ rc-menu@^8.0.1, rc-menu@^8.6.1, rc-menu@~8.10.0:
     shallowequal "^1.1.0"
 
 rc-motion@^2.0.0, rc-motion@^2.0.1, rc-motion@^2.2.0, rc-motion@^2.3.0, rc-motion@^2.3.4, rc-motion@^2.4.0:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/rc-motion/-/rc-motion-2.5.1.tgz#3eceb7d891079c0f67a72639d30e168b91839e03"
-  integrity sha512-h3GKMjFJkK+4z6fNfVlIMrb7WFCZsreivVvHOBb38cKcpKDx5g3kpHwn5Ekbo1+g0nnC02Dtap2trfCAPGxllw==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/rc-motion/-/rc-motion-2.6.0.tgz#c60c3e7f15257f55a8cd7794a539f0e2cc751399"
+  integrity sha512-1MDWA9+i174CZ0SIDenSYm2Wb9YbRkrexjZWR0CUFu7D6f23E8Y0KsTgk9NGOLJsGak5ELZK/Y5lOlf5wQdzbw==
   dependencies:
     "@babel/runtime" "^7.11.1"
     classnames "^2.2.1"
