@@ -4220,9 +4220,9 @@ rc-textarea@^0.3.0, rc-textarea@~0.3.0:
     shallowequal "^1.1.0"
 
 rc-tooltip@^5.0.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/rc-tooltip/-/rc-tooltip-5.1.1.tgz#94178ed162d0252bc4993b725f5dc2ac0fccf154"
-  integrity sha512-alt8eGMJulio6+4/uDm7nvV+rJq9bsfxFDCI0ljPdbuoygUscbsMYb6EQgwib/uqsXQUvzk+S7A59uYHmEgmDA==
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/rc-tooltip/-/rc-tooltip-5.2.1.tgz#6ba602ea908e418b4b83afe35e543d6885cdbfcc"
+  integrity sha512-9AG9ELYJfOgad+FebazLy7laQi6f+2pJcNMhfxFGhKV6joXaGyqG7fjzw4iWGYs2iZ3o82QZOD8i8ugiKiqBVw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     rc-trigger "^5.0.0"
