@@ -4271,9 +4271,9 @@ rc-tree@~4.0.0:
     rc-virtual-list "^3.0.1"
 
 rc-trigger@^5.0.0, rc-trigger@^5.0.4, rc-trigger@^5.1.2:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-5.3.3.tgz#166013df79e6a4ce64515391bd6d4f8386839761"
-  integrity sha512-IC4nuTSAME7RJSgwvHCNDQrIzhvGMKf6NDu5veX+zk1MG7i1UnwTWWthcP9WHw3+FZfP3oZGvkrHFPu/EGkFKw==
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-5.3.4.tgz#6b4b26e32825677c837d1eb4d7085035eecf9a61"
+  integrity sha512-mQv+vas0TwKcjAO2izNPkqR4j86OemLRmvL2nOzdP9OWNWA1ivoTt5hzFqYNW9zACwmTezRiN8bttrC7cZzYSw==
   dependencies:
     "@babel/runtime" "^7.18.3"
     classnames "^2.2.6"
@@ -4291,9 +4291,9 @@ rc-upload@~3.3.1:
     rc-util "^5.2.0"
 
 rc-util@^5.0.0, rc-util@^5.0.1, rc-util@^5.0.5, rc-util@^5.0.6, rc-util@^5.1.0, rc-util@^5.15.0, rc-util@^5.17.0, rc-util@^5.19.2, rc-util@^5.2.0, rc-util@^5.2.1, rc-util@^5.21.0, rc-util@^5.3.0, rc-util@^5.4.0, rc-util@^5.5.0, rc-util@^5.7.0, rc-util@^5.9.4:
-  version "5.24.5"
-  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.24.5.tgz#d486fada224fcaf7146e06e961d30c1c774e6209"
-  integrity sha512-Y5b6qQ2/tZKRT8MvL0/ky++JOMAijZPvepTMbt20eRDDMqXUbmIR+lkjcTfzDu845ysEyq0YGdRsaae3hrpnQg==
+  version "5.24.6"
+  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.24.6.tgz#ff4d64139c05d94727e8c3584b2cd0f74a7489cd"
+  integrity sha512-aBkJBmAHYllC6FSxHDjFTRsDp2V2xQ8iFhjG4f6au7pOcBk7p0b0mtiqQfD0OZLcxcBuvl6O9GCtNgOfZpKeVA==
   dependencies:
     "@babel/runtime" "^7.18.3"
     react-is "^16.12.0"
