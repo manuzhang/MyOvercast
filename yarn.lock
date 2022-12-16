@@ -2842,9 +2842,9 @@ json5@^1.0.1:
     minimist "^1.2.0"
 
 json5@^2.1.2:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
-  integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.2.tgz#64471c5bdcc564c18f7c1d4df2e2297f2457c5ab"
+  integrity sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==
 
 killable@^1.0.1:
   version "1.0.1"
@@ -3947,9 +3947,9 @@ raw-body@2.5.1:
     unpipe "1.0.0"
 
 rc-align@^4.0.0:
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/rc-align/-/rc-align-4.0.12.tgz#065b5c68a1cc92a00800c9239320d9fdf5f16207"
-  integrity sha512-3DuwSJp8iC/dgHzwreOQl52soj40LchlfUHtgACOUtwGuoFIOVh6n/sCpfqCU8kO5+iz6qR0YKvjgB8iPdE3aQ==
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/rc-align/-/rc-align-4.0.13.tgz#5aa1b7b9d20e63f18eb12550cac2eb8d5ef3fe4b"
+  integrity sha512-l/UwiJllPFVLL/bfDpm0W2ySb1heXeSELnmiMRjXiNp0sboO0z7DnjItXQKS8fNRp6CApzRT1+P6pNWZztbbnA==
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "2.x"
