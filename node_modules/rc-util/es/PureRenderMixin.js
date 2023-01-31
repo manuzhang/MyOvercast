@@ -9,7 +9,7 @@
  * @providesModule ReactComponentWithPureRenderMixin
  */
 
-import isEqual from './isEqual';
+import isEqual from "./isEqual";
 function shallowCompare(instance, nextProps, nextState) {
   return !isEqual(instance.props, nextProps, true) || !isEqual(instance.state, nextState, true);
 }

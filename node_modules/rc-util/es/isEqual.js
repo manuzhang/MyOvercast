@@ -1,5 +1,6 @@
 import _typeof from "@babel/runtime/helpers/esm/typeof";
-import warning from './warning';
+import warning from "./warning";
+
 /**
  * Deeply compares two object literals.
  * @param obj1 object 1
