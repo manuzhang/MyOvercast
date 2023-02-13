@@ -51,9 +51,9 @@
     regenerator-runtime "^0.13.11"
 
 "@ctrl/tinycolor@^3.3.1", "@ctrl/tinycolor@^3.4.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.5.0.tgz#6e52b3d1c38d13130101771821e09cdd414a16bc"
-  integrity sha512-tlJpwF40DEQcfR/QF+wNMVyGMaO9FQp6Z1Wahj4Gk3CJQYHwA2xVG7iKDFdW6zuxZY9XWOpGcfNCTsX4McOsOg==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.5.1.tgz#e3b2a1473e802a945ee872dbb98bcf9a6a53755b"
+  integrity sha512-Bp8VF1lm91/vxFSBdVrrSe+P4KpjRCSAJ6qPSeLFnVprT/ERXHDvV2OJSJbRwl1r/KcySshTUnVbAzrSbn93fg==
 
 "@gar/promisify@^1.0.1":
   version "1.1.3"
@@ -4208,9 +4208,9 @@ rc-resize-observer@^0.2.0, rc-resize-observer@^0.2.3:
     resize-observer-polyfill "^1.5.1"
 
 rc-resize-observer@^1.0.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/rc-resize-observer/-/rc-resize-observer-1.3.0.tgz#10217d606ed12a1e362330f17ab81c9b62d3be91"
-  integrity sha512-w6cgP6rKnOqsvVQii2iEPsVq96HqvKMTQk+Hi5MJJSMd6/z4BuCUqwuZuL9fcRcPUcnF7AMM+G/VOFcIirZexg==
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/rc-resize-observer/-/rc-resize-observer-1.3.1.tgz#b61b9f27048001243617b81f95e53d7d7d7a6a3d"
+  integrity sha512-iFUdt3NNhflbY3mwySv5CA1TC06zdJ+pfo0oc27xpf4PIOvfZwZGtD9Kz41wGYqC4SLio93RVAirSSpYlV/uYg==
   dependencies:
     "@babel/runtime" "^7.20.7"
     classnames "^2.2.1"
