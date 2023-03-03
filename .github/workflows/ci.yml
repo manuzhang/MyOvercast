@@ -5,6 +5,8 @@ on: [pull_request]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env: 
+      NODE_OPTIONS: --openssl-legacy-provider
     steps:
       - uses: actions/checkout@v2
       - uses: olafurpg/setup-scala@v10
