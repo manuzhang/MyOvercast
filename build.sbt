@@ -51,6 +51,7 @@ lazy val frontend = project.in(file("js"))
     webpack / version := "4.44.2",
     startWebpackDevServer / version := "3.11.2",
     fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot"),
+    webpackNodeArgs := Seq("--openssl-legacy-provider"),
     webpackConfigFile := Some((ThisBuild / baseDirectory).value / "custom.webpack.config.js"),
     useYarn := true,
     scalaJSUseMainModuleInitializer := true,
