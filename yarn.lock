@@ -3825,9 +3825,9 @@ postcss-modules-extract-imports@^3.0.0:
   integrity sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==
 
 postcss-modules-local-by-default@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-4.0.1.tgz#7beae6bb99ee5bfe1d8273b0d47a3463209e5cef"
-  integrity sha512-Zr/dB+IlXaEqdoslLHhhqecwj73vc3rDmOpsBNBEVk7P2aqAlz+Ijy0fFbU5Ie9PtreDOIgGa9MsLWakVGl+fA==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-4.0.3.tgz#b08eb4f083050708998ba2c6061b50c2870ca524"
+  integrity sha512-2/u2zraspoACtrbFRnTijMiQtb4GW4BvatjaG/bCjYQo8kLTdevCUlwuBHx2sCnSyrI3x3qj4ZK1j5LQBgzmwA==
   dependencies:
     icss-utils "^5.0.0"
     postcss-selector-parser "^6.0.2"
@@ -4382,9 +4382,9 @@ rc-upload@~3.3.1:
     rc-util "^5.2.0"
 
 rc-util@^5.0.0, rc-util@^5.0.1, rc-util@^5.0.5, rc-util@^5.0.6, rc-util@^5.1.0, rc-util@^5.15.0, rc-util@^5.17.0, rc-util@^5.19.2, rc-util@^5.2.0, rc-util@^5.2.1, rc-util@^5.21.0, rc-util@^5.26.0, rc-util@^5.27.0, rc-util@^5.4.0, rc-util@^5.5.0, rc-util@^5.7.0, rc-util@^5.9.4:
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.30.0.tgz#76ae9019ff72a5b519ce51465cd77b2e451207e3"
-  integrity sha512-uaWpF/CZGyXuhQG71MWxkU+0bWkPEgqZUxEv251Cu7p3kpHDNm5+Ygu/U8ux0a/zbfGW8PsKcJL0XVBOMrlIZg==
+  version "5.31.1"
+  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.31.1.tgz#e64321e2c9589d6f9d6e91e310b8b461eb91f425"
+  integrity sha512-ecgQsqv7j0ZTNMsQU1M/xLBnboSoiJxwE9R0rQEe0MaxOCZmhTTCjDP+6KPQjTaXlyIkVuZT3lC4CNkr+cp9Lw==
   dependencies:
     "@babel/runtime" "^7.18.3"
     react-is "^16.12.0"
