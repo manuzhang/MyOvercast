@@ -4382,9 +4382,9 @@ rc-upload@~3.3.1:
     rc-util "^5.2.0"
 
 rc-util@^5.0.0, rc-util@^5.0.1, rc-util@^5.0.5, rc-util@^5.0.6, rc-util@^5.1.0, rc-util@^5.15.0, rc-util@^5.17.0, rc-util@^5.19.2, rc-util@^5.2.0, rc-util@^5.2.1, rc-util@^5.21.0, rc-util@^5.26.0, rc-util@^5.27.0, rc-util@^5.4.0, rc-util@^5.5.0, rc-util@^5.7.0, rc-util@^5.9.4:
-  version "5.32.3"
-  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.32.3.tgz#6d1dd504e8389b3ff9d780020c95f1d2a4d39946"
-  integrity sha512-+Pv1nOiTtmp6kpz8yZ/DToMrZHz4DIUi1/EhpIsGQhhF12jANx3rb+gsp0YUWWtxUDf6U1Eyhe0EN+mBlCJXoA==
+  version "5.32.4"
+  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.32.4.tgz#d8bcd36a2e7b82ee30f3317b8da8c094c730dbfc"
+  integrity sha512-LRQpfPjtLbN9BrNgU/evbQrhTLfHepJPSKbhHF2Nm1cnNeZkSqXCKDTDPjMXa1VavcnJA1iP39O8PB0+Rc216Q==
   dependencies:
     "@babel/runtime" "^7.18.3"
     react-is "^16.12.0"
