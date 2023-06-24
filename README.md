@@ -29,5 +29,5 @@ Create a daily run GitHub Action to rebuild and refresh site everyday.
 
 ## References
 
-* [ScalablyTyped/SlinkyDemo](https://github.com/ScalablyTyped/SlinkyDemo)
+* [ScalablyTyped/SlinkyDemo](https://github.com/ScalablyTyped/SlinkyDemos)
 * [lastcastfm/overcast-scrobbler-python](https://github.com/lastcastfm/overcast-scrobbler-python)
