@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Launch Scala Steward
     env:
-      SBT_OPTS: -XX:+UseG1GC
+      SBT_OPTS: -Xmx2G
     steps:
       - name: Launch Scala Steward
         uses: scala-steward-org/scala-steward-action@v2
