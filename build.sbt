@@ -44,8 +44,8 @@ lazy val frontend = project.in(file("js"))
     stIgnore += "react-proxy",
     stFlavour := Flavour.Slinky,
     libraryDependencies ++= Seq(
-      "me.shadaj" %%% "slinky-web" % "0.7.2",
-      "me.shadaj" %%% "slinky-hot" % "0.7.2",
+      "me.shadaj" %%% "slinky-web" % "0.7.4",
+      "me.shadaj" %%% "slinky-hot" % "0.7.4",
       "io.github.cquiroz" %%% "scala-java-time" % "2.3.0"
     ),
     webpack / version := "4.44.2",
