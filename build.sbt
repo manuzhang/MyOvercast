@@ -46,7 +46,7 @@ lazy val frontend = project.in(file("js"))
     libraryDependencies ++= Seq(
       "me.shadaj" %%% "slinky-web" % "0.7.2",
       "me.shadaj" %%% "slinky-hot" % "0.7.2",
-      "io.github.cquiroz" %%% "scala-java-time" % "2.3.0"
+      "io.github.cquiroz" %%% "scala-java-time" % "2.5.0"
     ),
     webpack / version := "4.44.2",
     startWebpackDevServer / version := "3.11.2",
