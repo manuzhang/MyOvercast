@@ -127,9 +127,9 @@
   integrity sha512-Y+/1vGBHV/cYk6OI1Na/LHzwnlNCAfU3ZNGrc1LdRe/LAIbdDPTTv/HU3M7yXN448aTVDq3eKRm2cg7iKLb8gw==
 
 "@types/prop-types@*":
-  version "15.7.5"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
-  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+  version "15.7.6"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.6.tgz#bbf819813d6be21011b8f5801058498bec555572"
+  integrity sha512-RK/kBbYOQQHLYj9Z95eh7S6t7gq4Ojt/NT8HTk8bWVhA5DaF+5SMnxHKkP4gPNN3wAZkKP+VjAf0ebtYzf+fxg==
 
 "@types/react-dom@16.9.8":
   version "16.9.8"
@@ -139,9 +139,9 @@
     "@types/react" "*"
 
 "@types/react@*":
-  version "18.2.21"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.21.tgz#774c37fd01b522d0b91aed04811b58e4e0514ed9"
-  integrity sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==
+  version "18.2.22"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.22.tgz#abe778a1c95a07fa70df40a52d7300a40b949ccb"
+  integrity sha512-60fLTOLqzarLED2O3UQImc/lsNRgG0jE/a1mPW9KjMemY0LMITWEsbS4VvZ4p6rorEHd5YKxxmMKSDK505GHpA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4407,9 +4407,9 @@ rc-util@^5.0.0, rc-util@^5.0.1, rc-util@^5.0.5, rc-util@^5.0.6, rc-util@^5.1.0, 
     react-is "^16.12.0"
 
 rc-virtual-list@^3.0.1, rc-virtual-list@^3.2.0:
-  version "3.10.7"
-  resolved "https://registry.yarnpkg.com/rc-virtual-list/-/rc-virtual-list-3.10.7.tgz#1425c78dc415fb196ab692727aae985d13c23ee5"
-  integrity sha512-NZl8nsNV2kf0k9o4SHt6u/2kFBhE0SRTh71msUZkUB/rfNTBRKnhLXf8bD2jayT7TkprnbHBCPQbPqwJo2BSJw==
+  version "3.10.8"
+  resolved "https://registry.yarnpkg.com/rc-virtual-list/-/rc-virtual-list-3.10.8.tgz#53492d90659d900ebb9196cb2903f0c397ed9999"
+  integrity sha512-QUdQ09KVz60KULJaFF51dDA3hpVAMtN9M+qbTDIARKhBb0TPG8s3ifQUuuhbe4I4lQ3G11wB5qJudN1zi8sgkA==
   dependencies:
     "@babel/runtime" "^7.20.0"
     classnames "^2.2.6"
