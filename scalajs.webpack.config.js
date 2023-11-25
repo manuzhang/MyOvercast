@@ -7,6 +7,9 @@ module.exports = {
     "filename": "[name]-bundle.js"
   },
   "mode": "production",
+  "devServer": {
+    "port": 8080
+  },
   "devtool": "source-map",
   "module": {
     "rules": [{
