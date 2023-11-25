@@ -48,7 +48,7 @@ lazy val frontend = project.in(file("js"))
       "me.shadaj" %%% "slinky-hot" % "0.7.4",
       "io.github.cquiroz" %%% "scala-java-time" % "2.5.0"
     ),
-    webpack / version := "4.44.2",
+    webpack / version := "5.88.2",
     startWebpackDevServer / version := "3.11.2",
     fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot"),
     webpackNodeArgs := Seq("--openssl-legacy-provider"),

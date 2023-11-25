@@ -6,7 +6,7 @@ import slinky.core.annotations.react
 import slinky.core.facade.Hooks
 import slinky.web.html._
 import typings.antd.components._
-import typings.antd.tableInterfaceMod.ColumnType
+import typings.antd.libTableInterfaceMod.ColumnType
 import typings.react.mod.CSSProperties
 
 import java.time.ZonedDateTime
