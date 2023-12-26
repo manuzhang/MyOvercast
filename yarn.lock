@@ -929,9 +929,9 @@ class-utils@^0.3.5:
     static-extend "^0.1.1"
 
 classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.3.tgz#897b59920fa3e336571c164366efad73e9d6418b"
-  integrity sha512-1inzZmicIFcmUya7PGtUQeXtcF7zZpPnxtQoYOrz0uiOBGlLFa4ik4361seYL2JCcRDIyfdFHiwQolESFlw+Og==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.4.0.tgz#78011af2612f5c552195e2e657bd5fe2de973cac"
+  integrity sha512-lWxiIlphgAhTLN657pwU/ofFxsUTOWc2CRIFeoV5st0MGRJHStUnWIUJgDHxjUO/F0mXzGufXIM4Lfu/8h+MpA==
 
 clean-css@^4.2.3:
   version "4.2.4"
@@ -3363,9 +3363,9 @@ postcss-modules-values@^4.0.0:
     icss-utils "^5.0.0"
 
 postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4:
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.13.tgz#d05d8d76b1e8e173257ef9d60b706a8e5e99bf1b"
-  integrity sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==
+  version "6.0.14"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.14.tgz#9d45f1afbebedae6811a17f49d09754f2ad153b3"
+  integrity sha512-65xXYsT40i9GyWzlHQ5ShZoK7JZdySeOozi/tz2EezDo6c04q6+ckYMeoY7idaie1qp2dT5KoYQ2yky6JuoHnA==
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
