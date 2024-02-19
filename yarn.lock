@@ -2313,9 +2313,9 @@ ip-regex@^2.1.0:
   integrity sha512-58yWmlHpp7VYfcdTwMTvwMmqx/Elfxjd9RXTDyMsbL7lLWmhMylLEqiYVLKuLzOZqVgiWXD9MfR62Vv89VRxkw==
 
 ip@^1.1.0, ip@^1.1.5:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.8.tgz#ae05948f6b075435ed3307acce04629da8cdbf48"
-  integrity sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.9.tgz#8dfbcc99a754d07f425310b86a99546b1151e396"
+  integrity sha512-cyRxvOEpNHNtchU3Ln9KC/auJgup87llfQpQ+t5ghoC/UhL16SWzbueiCsdTnWmqAWl7LadfuwhlqmtOaqMHdQ==
 
 ipaddr.js@1.9.1, ipaddr.js@^1.9.0:
   version "1.9.1"
@@ -4690,9 +4690,9 @@ terser@^4.6.3:
     source-map-support "~0.5.12"
 
 terser@^5.26.0:
-  version "5.27.1"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.27.1.tgz#b0092975ea1b379d166088a1a57e32f0839d84a2"
-  integrity sha512-29wAr6UU/oQpnTw5HoadwjUZnFQXGdOfj0LjZ4sVxzqwHh/QVkvr7m8y9WoR4iN3FRitVduTc6KdjcW38Npsug==
+  version "5.27.2"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.27.2.tgz#577a362515ff5635f98ba149643793a3973ba77e"
+  integrity sha512-sHXmLSkImesJ4p5apTeT63DsV4Obe1s37qT8qvwHRmVxKTBH7Rv9Wr26VcAMmLbmk9UliiwK8z+657NyJHHy/w==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
