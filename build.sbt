@@ -3,7 +3,7 @@ import scalajsbundler.sbtplugin.ScalaJSBundlerPlugin.autoImport.webpack
 
 import java.nio.file.Files
 
-ThisBuild / scalaVersion := "2.13.12"
+ThisBuild / scalaVersion := "2.13.13"
 
 lazy val myovercast = crossProject(JVMPlatform, JSPlatform)
   .settings(
