@@ -19,7 +19,7 @@ lazy val backend = project.in(file("jvm"))
     libraryDependencies ++= Seq(
       "com.lihaoyi" %% "os-lib" % "0.8.1",
       "com.lihaoyi" %% "requests" % "0.7.0",
-      "org.scala-lang.modules" %% "scala-xml" % "2.2.0")
+      "org.scala-lang.modules" %% "scala-xml" % "2.3.0")
   ).dependsOn(myovercast.jvm)
 
 lazy val build = TaskKey[Unit]("build")
