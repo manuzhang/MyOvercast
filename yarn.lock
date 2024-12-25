@@ -1466,9 +1466,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.5.73:
-  version "1.5.75"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.75.tgz#bba96eabf0e8ca36324679caa38b982800acc87d"
-  integrity sha512-Lf3++DumRE/QmweGjU+ZcKqQ+3bKkU/qjaKYhIJKEOhgIO9Xs6IiAQFkfFoj+RhgDk4LUeNsLo6plExHqSyu6Q==
+  version "1.5.76"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.76.tgz#db20295c5061b68f07c8ea4dfcbd701485d94a3d"
+  integrity sha512-CjVQyG7n7Sr+eBXE86HIulnL5N8xZY1sgmOPGuq/F0Rr0FJq63lg0kEtOIDfZBk44FnDLf6FUJ+dsJcuiUDdDQ==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -4040,9 +4040,9 @@ rc-upload@~3.3.1:
     rc-util "^5.2.0"
 
 rc-util@^5.0.0, rc-util@^5.0.1, rc-util@^5.0.5, rc-util@^5.0.6, rc-util@^5.1.0, rc-util@^5.17.0, rc-util@^5.19.2, rc-util@^5.2.0, rc-util@^5.2.1, rc-util@^5.26.0, rc-util@^5.36.0, rc-util@^5.4.0, rc-util@^5.44.0, rc-util@^5.44.1, rc-util@^5.5.0, rc-util@^5.7.0, rc-util@^5.9.4:
-  version "5.44.2"
-  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.44.2.tgz#6bc5db0e96ebdb515eb5977a7371887e5413a6f8"
-  integrity sha512-uGSk3hpPBLa3/0QAcKhCjgl4SFnhQCJDLvvpoLdbR6KgDuXrujG+dQaUeUvBJr2ZWak1O/9n+cYbJiWmmk95EQ==
+  version "5.44.3"
+  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.44.3.tgz#9eca5039906446113c4032859f88c15234547961"
+  integrity sha512-q6KCcOFk3rv/zD3MckhJteZxb0VjAIFuf622B7ElK4vfrZdAzs16XR5p3VTdy3+U5jfJU5ACz4QnhLSuAGe5dA==
   dependencies:
     "@babel/runtime" "^7.18.3"
     react-is "^18.2.0"
