@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/ljharb/own-keys/compare/v1.0.0...v1.0.1) - 2024-12-29
+
+### Commits
+
+- [Tests] sort with a proper comparator [`4a65b56`](https://github.com/ljharb/own-keys/commit/4a65b569d10985032a0773806dcdec8866132baa)
+- [Fix] fix function name when `Reflect.ownKeys` is absent [`5cf17cb`](https://github.com/ljharb/own-keys/commit/5cf17cb1c9adfa836a1ddc467da4da20973db2ae)
+
 ## v1.0.0 - 2024-12-28
 
 ### Commits

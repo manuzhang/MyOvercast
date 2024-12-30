@@ -4,6 +4,7 @@
 	"extends": "@ljharb",
 
 	"rules": {
+		"func-style": "off",
 		"id-length": "off",
 		"max-lines-per-function": "off",
 		"new-cap": ["error", {

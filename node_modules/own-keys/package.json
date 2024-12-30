@@ -1,6 +1,6 @@
 {
 	"name": "own-keys",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Robustly get an object's own property keys (strings and symbols), including non-enumerables when possible",
 	"main": "index.js",
 	"exports": {

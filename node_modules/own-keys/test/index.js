@@ -6,6 +6,17 @@ var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var ownKeys = require('../');
 
+/** @type {(a: PropertyKey, b: PropertyKey) => number} */
+function comparator(a, b) {
+	if (typeof a === 'string' && typeof b === 'string') {
+		return a.localeCompare(b);
+	}
+	if (typeof a === 'number' && typeof b === 'number') {
+		return a - b;
+	}
+	return typeof a === 'symbol' ? 1 : -1;
+}
+
 test('ownKeys', function (t) {
 	t.equal(typeof ownKeys, 'function', 'is a function');
 	t.equal(
@@ -26,8 +37,8 @@ test('ownKeys', function (t) {
 		}
 
 		st.deepEqual(
-			ownKeys(obj).sort(),
-			(hasPropertyDescriptors ? ['a', 'b', 'c'] : ['a', 'b']).sort(),
+			ownKeys(obj).sort(comparator),
+			(hasPropertyDescriptors ? ['a', 'b', 'c'] : ['a', 'b']).sort(comparator),
 			'includes non-enumerable properties'
 		);
 
@@ -49,8 +60,8 @@ test('ownKeys', function (t) {
 		});
 
 		st.deepEqual(
-			ownKeys(obj).sort(),
-			['a', sym, nonEnumSym].sort(),
+			ownKeys(obj).sort(comparator),
+			['a', sym, nonEnumSym].sort(comparator),
 			'works with symbols, both enum and non-enum'
 		);
 
