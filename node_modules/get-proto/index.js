@@ -11,9 +11,17 @@ module.exports = reflectGetProto
 		// @ts-expect-error TS can't narrow inside a closure, for some reason
 		return reflectGetProto(O);
 	}
-	: originalGetProto || (
-		getDunderProto ? function getProto(O) {
+	: originalGetProto
+		? function getProto(O) {
+			if (!O || (typeof O !== 'object' && typeof O !== 'function')) {
+				throw new TypeError('getProto: not an object');
+			}
 			// @ts-expect-error TS can't narrow inside a closure, for some reason
-			return getDunderProto(O);
-		} : null
-	);
+			return originalGetProto(O);
+		}
+		: getDunderProto
+			? function getProto(O) {
+				// @ts-expect-error TS can't narrow inside a closure, for some reason
+				return getDunderProto(O);
+			}
+			: null;

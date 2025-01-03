@@ -1,6 +1,6 @@
 {
 	"name": "get-proto",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Robustly get the [[Prototype]] of an object",
 	"main": "index.js",
 	"exports": {
