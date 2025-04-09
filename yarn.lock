@@ -1470,9 +1470,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.5.73:
-  version "1.5.133"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.133.tgz#1e0aba775a9ae51a42d70a2c5e562fab515105f4"
-  integrity sha512-mrR+g6Y1at0GKDlPlMMwLAkI6c47q3d7U/vKS3rGTa3V4xStu18oT4UCPg5ErcAhUqk7swSjXSPUGstOYd2qBw==
+  version "1.5.134"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.134.tgz#d90008c4f8a506c1a6d1b329f922d83e18904101"
+  integrity sha512-zSwzrLg3jNP3bwsLqWHmS5z2nIOQ5ngMnfMZOWWtXnqqQkPVyOipxK98w+1beLw1TB+EImPNcG8wVP/cLVs2Og==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -2296,9 +2296,9 @@ http-errors@~1.6.2:
     statuses ">= 1.4.0 < 2"
 
 http-parser-js@>=0.5.1:
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.5.9.tgz#b817b3ca0edea6236225000d795378707c169cec"
-  integrity sha512-n1XsPy3rXVxlqxVioEWdC+0+M+SQw0DpJynwtOPo1X+ZlvdzTLtDBIJJlDQTnwZIFJrZSzSGmIOUdP8tu+SgLw==
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.5.10.tgz#b3277bd6d7ed5588e20ea73bf724fcbe44609075"
+  integrity sha512-Pysuw9XpUq5dVc/2SMHpuTY01RFl8fttgcyunjL7eEMhGM3cI4eOmiCycJDVCo/7O7ClfQD3SaI6ftDzqOXYMA==
 
 http-proxy-middleware@0.19.1:
   version "0.19.1"
